@@ -32,7 +32,7 @@ Finally, we selected and grouped the results by frequency category, returning:
 
 For Assessment_Q3.sql which is to find all active accounts (savings or investments) with no transactions in the last 1 year (365 days):
 
-I wrote a table  to return the last transaction date using Max aggregation. 
+I wrote a table expression to return the last transaction date using Max aggregation. 
 On my main query I returned the plan ID, owner ID and the Account type, the last transaction date, and the inactivity period using DATEDIFF function between the current and last transaction date.
 Filtered for all active accounts savings and investment with no activity in the last 365 days.
 
