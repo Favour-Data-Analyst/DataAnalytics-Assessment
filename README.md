@@ -1,1 +1,2 @@
-# DataAnalytics-Assessment
+Firstly i ran the code given on ssms and it didn't work and then i loaded the code on MYSQL because it was for MYSQL and executed it to create my database and tables and then i exported to ssms and also had my database and each table in the database then i properly read the questions to understand and i began answering the questions
+For Assessment_Q1.sql which is to Write a query to find customers with at least one funded savings plan and one funded investment plan, sorted by total deposits
