@@ -5,7 +5,7 @@ WITH customer_transactions AS (
         COUNT(*) AS total_transactions,  -- Total number of transactions by the customer
         -- Calculate total profit as 0.1% of the total confirmed amount (converted to float and scaled)
         ROUND(SUM(CAST(sa.confirmed_amount AS FLOAT)) / 100.0 * 0.001, 2) AS total_profit  
-		  --ROUND(SUM(sa.confirmed_amount) / 100.0 * 0.001, 2) AS total_profit(uncomment and usse the code instaed for mysql)
+		  --ROUND(SUM(sa.confirmed_amount) / 100.0 * 0.001, 2) AS total_profit(uncomment and use the code instaed for mysql)
     FROM savings_savingsaccount sa
     GROUP BY sa.owner_id
 ),
